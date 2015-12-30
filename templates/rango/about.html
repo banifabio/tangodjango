@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block title %}About{% endblock %}
+
+{% block body_block %}
+    <div class="page-header">
+        <h1>About</h1>
+    </div>
+
+
+    <h1>Rango says...</h1>
+    <div id="msg">Hello</div>
+
+    here is the about page <strong>{{ boldmessage }}</strong><br />
+    <p> visits: {{ visits }}</p>
+
+    <button onClick="alert('You clicked the button using Javascript.');">
+       Click Me - I run Javascript
+    </button>
+
+    <button id="about-btn"> Click Me - I'm Javascript on Speed</button>
+
+    <div class="ouch"> <p>se mi clicchi faccio ouch</p> </div>
+
+    <img width="1000" height="1000" src="{% static "images/verdura.jpg" %}" alt="Picture of Rango about" />
+{% endblock %}
