@@ -3,7 +3,7 @@ from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 import datetime
 #from datetime import date
-from datetime import timezone
+#from datetime import timezone
 
 class Category(models.Model):
     name = models.CharField(max_length=128, unique=True)
