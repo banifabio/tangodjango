@@ -1,1 +1,2 @@
 # tangodjango
+Try the tutorial
